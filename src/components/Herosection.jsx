@@ -38,7 +38,7 @@ const Herosection = () => {
         </div>
       </nav>
       <div className=' max-w-[1200px] px-3 mx-auto overflow-hidden'>
-        <h1 className='relative text-center pt-[70px] avia' ><img src={aviation} alt="avia" />
+        <h1 className='relative text-center pt:[30px] sm:pt-[70px] avia' ><img src={aviation} alt="avia" />
         <img src={aeroplane} alt=""  className=' hidden 900:block absolute 1200:top-[23%] top-[42%] left-[4%] lg:left-[9%] 1200:left-[-1%] 900:max-w-[880px] aeroanimation max-w-[1000px] 1200:max-w-[1140px]'/></h1>
         <img src={aeroplane} alt=""  className=' block 900:hidden w-full aeroanimation max-w-[1100px] 1200:max-w-[1140px] -mt-5'/>
         <div className=' font-ff-mont text-[#FFF] text-[25px] xxs:text-[30px] xs:text-[40px] sm:text-[46px] md:text-[48px] font-bold tracking-[0.72px] xs:leading-[150%] pt-4 900:pt-[231px] text-center'>Travel Around The World
