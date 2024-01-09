@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import hero1 from "../assets/images/herobg-img.png";
 import pagelogo from "../assets/images/pagelogo.png";
 import aeroplane from "../assets/images/bigaero.png";
+import aviation from "../assets/images/Aviation.png";
 
 const Herosection = () => {
   const [show, setShow] = useState(false);
@@ -37,7 +38,7 @@ const Herosection = () => {
         </div>
       </nav>
       <div className=' max-w-[1200px] px-3 mx-auto overflow-hidden'>
-        <h1 className='text-[50px] xxs:text-[76px] xs:text-[100px] md:text-[117.637px] uppercase font-black font-work leading-[150%] sm:tracking-[10px] md:tracking-[12px] lg:tracking-[53px] 900:tracking-[36.582px] 1200:tracking-[70.582px] relative text-[transparent] text-center pt-[30px] avia' >AVIATION
+        <h1 className='relative text-center pt-[70px] avia' ><img src={aviation} alt="avia" />
         <img src={aeroplane} alt=""  className=' hidden 900:block absolute 1200:top-[23%] top-[42%] left-[4%] lg:left-[9%] 1200:left-[-1%] 900:max-w-[880px] aeroanimation max-w-[1000px] 1200:max-w-[1140px]'/></h1>
         <img src={aeroplane} alt=""  className=' block 900:hidden w-full aeroanimation max-w-[1100px] 1200:max-w-[1140px] -mt-5'/>
         <div className=' font-ff-mont text-[#FFF] text-[25px] xxs:text-[30px] xs:text-[40px] sm:text-[46px] md:text-[48px] font-bold tracking-[0.72px] xs:leading-[150%] pt-4 900:pt-[231px] text-center'>Travel Around The World
