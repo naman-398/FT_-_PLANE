@@ -13,7 +13,7 @@ module.exports = {
         'inter': 'Inter, sans-serif',
         'ff-mont': 'Montserrat ,sans-serif',
         'Rubik' : 'Rubik, sans-serif',
-        'work' : 'Public Sans, sans-serif'
+    'work' : 'Public Sans, sans-serif'
       },
       boxShadow: {
         'shadow': '0px 100px 200px 0px rgba(1, 23, 54, 0.10);',

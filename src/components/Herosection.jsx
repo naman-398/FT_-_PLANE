@@ -15,7 +15,7 @@ const Herosection = () => {
     }
   }
   return (
-    <div className=' bg-[url(../src/assets/images/herobg-img.png)] bg-no-repeat 900:h-[810px] bg-100% relative' >
+    <div className=' bg-[url(../src/assets/images/herobg-img.png)] bg-no-repeat 900:h-[810px] h-[400px] bg-100% relative' >
      
       <nav className=' py-[20px]'>
         <div className=' max-w-[1200px] px-3 mx-auto flex items-center justify-between'>
