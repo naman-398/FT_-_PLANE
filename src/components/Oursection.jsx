@@ -117,7 +117,7 @@ const Oursection = () => {
                         </span></div>)}
             <div className='max-w-[1200px] px-3 mx-auto relative z-[0]'>
                 <div className=' pt-4 900:pt-0 900:translate-y-[-54%]'>
-                    <div className=' flex overflow-x-scroll'>
+                    <div className=' flex overflow-x-scroll xs:overscroll-x-none'>
                         <button onClick={() => tabs('tab1')} className={`${first === "tab1" ? "tab" : ""} font-ff-mont text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[23px] sm:px-[42px] rounded-tl-[20px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>Economy</button>
                         <button onClick={() => tabs('tab2')} className={`${first === "tab2" ? "tab" : ""} font-ff-mont text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[20px] sm:px-[39px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>Busniness </button>
                         <button onClick={() => tabs('tab3')} className={`${first === "tab3" ? "tab" : ""} font-ff-mont text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[47px] sm:px-[66px] rounded-tr-[20px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>First</button>
