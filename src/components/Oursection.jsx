@@ -36,30 +36,34 @@ const Oursection = () => {
     const [showModal1, setShowModal1] = useState(false);
     const [showModal2, setShowModal2] = useState(false);
     const [showModal3, setShowModal3] = useState(false);
-  
+
     const openModal1 = () => {
-      setShowModal1(true);
-      setShowModal2(false);
-      setShowModal3(false);
+        setShowModal1(true);
+        setShowModal2(false);
+        setShowModal3(false);
+   
     };
-  
+
+
     const openModal2 = () => {
-      setShowModal1(false);
-      setShowModal2(true);
-      setShowModal3(false);
+        setShowModal1(false);
+        setShowModal2(true);
+        setShowModal3(false);
     };
-  
+
     const openModal3 = () => {
-      setShowModal1(false);
-      setShowModal2(false);
-      setShowModal3(true);
+        setShowModal1(false);
+        setShowModal2(false);
+        setShowModal3(true);
     };
-  
+
     const closeModal = () => {
-      setShowModal1(false);
-      setShowModal2(false);
-      setShowModal3(false);
+        setShowModal1(false);
+        setShowModal2(false);
+        setShowModal3(false);
     };
+    if (showModal1 || showModal2 || showModal3 === true) { document.body.classList.add('overflow-hidden') }
+    else { document.body.classList.remove('overflow-hidden') }
     useEffect(() => {
         AOS.init(
             {
@@ -88,33 +92,33 @@ const Oursection = () => {
     ))
     return (
         <div className='bg-[#FEFEFE] relative z-0' id='all'>
-            { showModal1 && (
+            {showModal1 && (
                 <div className=' absolute w-full h-full top-[-20%] xs:top-[-50%] start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
-            <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
-                            <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
-                            </div>
-                            <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
-                            <p className=' text-center font-ff-mont font-semibold text-[15px] xs:text-[18px] text-[#313EF7] mt-1 xs:mt-3'> Your Economy Class Ticket Is Booked</p>
-                            <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
-                        </span></div>)}
-            { showModal2 && (
+                    <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
+                        <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
+                        </div>
+                        <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
+                        <p className=' text-center font-ff-mont font-semibold text-[15px] xs:text-[18px] text-[#313EF7] mt-1 xs:mt-3'> Your Economy Class Ticket Is Booked</p>
+                        <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
+                    </span></div>)}
+            {showModal2 && (
                 <div className=' absolute w-full h-full top-[-20%] xs:top-[-50%]  start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
-            <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
-                            <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
-                            </div>
-                            <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
-                            <p className=' text-center font-ff-mont font-semibold text-[15px] xs:text-[18px] text-[#313EF7] mt-1 xs:mt-3'> Your Busniness Class Ticket Is Booked</p>
-                            <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
-                        </span></div>)}
-            { showModal3 && (
+                    <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
+                        <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
+                        </div>
+                        <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
+                        <p className=' text-center font-ff-mont font-semibold text-[15px] xs:text-[18px] text-[#313EF7] mt-1 xs:mt-3'> Your Busniness Class Ticket Is Booked</p>
+                        <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
+                    </span></div>)}
+            {showModal3 && (
                 <div className=' absolute w-full h-full top-[-20%] xs:top-[-50%]  start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
-            <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
-                            <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
-                            </div>
-                            <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
-                            <p className=' text-center font-ff-mont font-semibold text-[15px] xs:text-[18px] text-[#313EF7] mt-1 xs:mt-3'> Your First Class Ticket Is Booked</p>
-                            <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
-                        </span></div>)}
+                    <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
+                        <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
+                        </div>
+                        <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
+                        <p className=' text-center font-ff-mont font-semibold text-[15px] xs:text-[18px] text-[#313EF7] mt-1 xs:mt-3'> Your First Class Ticket Is Booked</p>
+                        <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
+                    </span></div>)}
             <div className='max-w-[1200px] px-3 mx-auto relative z-[0]'>
                 <div className=' pt-4 900:pt-0 900:translate-y-[-54%]'>
                     <div className=' flex overflow-x-scroll '>
@@ -214,8 +218,8 @@ const Oursection = () => {
                                 </div>
                             </div>
                             <div className=' text-center mt-[8px] xs:mt-[25px]'>
-                            <button onClick={openModal1} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
-                        </div>
+                                <button onClick={openModal1} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
+                            </div>
                         </div>}
                         {first === "tab2" && <div>
 
@@ -308,8 +312,8 @@ const Oursection = () => {
                                 </div>
                             </div>
                             <div className=' text-center mt-[8px] xs:mt-[25px]'>
-                            <button onClick={openModal2} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
-                        </div>
+                                <button onClick={openModal2} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
+                            </div>
                         </div>}
                         {first === "tab3" && <div>
 
@@ -402,8 +406,8 @@ const Oursection = () => {
                                 </div>
                             </div>
                             <div className=' text-center mt-[8px] xs:mt-[25px]'>
-                            <button onClick={openModal3} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
-                        </div>
+                                <button onClick={openModal3} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
+                            </div>
                         </div>}
                     </div>
                 </div>
