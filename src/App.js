@@ -1,23 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Herosection from './components/Herosection';
+import Oursection from './components/Oursection';
+import Letsection from './components/Letsection';
+import Makesection from './components/Makesection';
+import Sunscribesec from './components/Sunscribesec';
+import Footer from './components/Footer';
+import Bestsection from './components/Bestsection';
+import Booksection from './components/Booksection';
+import Whatsectiom from './components/Whatsectiom';
+import Loadersection from './components/Loadersection';
+import Backtotop from './components/Backtotop';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <Loadersection/>
+      <Backtotop/>
+<Herosection/>
+<Oursection/>
+<Letsection/>
+<Booksection/>
+<Bestsection/>
+<Whatsectiom/>
+<Makesection/>
+<Sunscribesec/>
+<Footer/>
     </div>
   );
 }
