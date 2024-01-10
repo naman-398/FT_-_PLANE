@@ -33,7 +33,7 @@ const Herosection = () => {
           <button
             className={`${show ? "" : "unshow"} z-[4] hover:border-[#1C1D4B] hover:bg-[#313EF7] duration-300 relative md:hidden font-ff-mont text-base font-semibold text-white xs:py-[10px] xs:px-[40px] py-[7px] px-[22px] border-[1px] border-[#FFF] rounded-[59px]`}
             onClick={mobileview}>
-            show
+            {show === false ? "Show" : "Unshow"}
           </button>
         </div>
       </nav>
