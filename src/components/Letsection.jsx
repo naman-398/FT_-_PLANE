@@ -19,7 +19,8 @@ const Letsection = () => {
                     <img src={s3_imh1} alt="" className=' mx-auto' data-aos="fade-right"/>
                 </div>
                 <div className=' md:w-1/2 px-3 mt-3 lgg:mt-0'>
-                    <p className=' font-ff-mont text-[20px] font-black leading-[24px] text-[#313EF7]'  data-aos="fade-left">Let’s Fly</p>
+                    <p className=' font-ff-mont text-[20px] font-black leading-[24px] text-[#313EF7] flex items-center gap-4'  data-aos="fade-left">Let’s&nbsp;Fly
+                    <hr  className=' w-full border-[2px] border-dashed border-[#E5E7EB] max-w-[483px]'/></p>
                     <p className=' font-ff-mont text-[20px] xxs:text-[23px] xs:text-[31px] font-bold leading-[normal] md:leading-[35px] lg:leading-[45px] text-[#030303] ' data-aos="fade-left">It’s one of the leading online flight booking platforms in the world</p>
                     <div className='py-[10px] xs:py-[25px] lgg:py-[40px] flex flex-col gap-[10px] relative'>
                         <p className=' flex items-center gap-[10px]' data-aos="fade-left">
@@ -40,7 +41,7 @@ const Letsection = () => {
                         </p>
                         <hr className=' border-dashed border-[2px] rotate-[90deg] w-[140px] absolute left-[-11.4%] top-[46%] z-[-1] hidden xl:block'/>
                     </div>
-                    <button className=' duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] font-ff-mont text-[16px] font-semibold leading-[28px] text-[#FFF] bg-[#313EF7] py-[10px] px-[25px] sm:py-[14px] sm:px-[45px] rounded-[56px]'>Book Now</button>
+                    <button className=' duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent btn hover:text-[#313EF7] font-ff-mont text-[16px] font-semibold leading-[28px] text-[#FFF] bg-[#313EF7] py-[10px] px-[25px] sm:py-[14px] sm:px-[45px] rounded-[56px]'>Book Now</button>
                 </div>
             </div>
         </div>

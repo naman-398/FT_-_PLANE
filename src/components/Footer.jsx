@@ -25,18 +25,18 @@ const Footer = () => {
                         <div className="flex items-center  gap-5 xs:pt-[24px] pt-[15px]"  data-aos="fade-right">
                             <a
                                 href="https://www.facebook.com/"
-                                className="rounded-full bg-white w-[42px] h-[42px] flex items-center justify-center">
+                                className="rounded-full bg-white w-[42px] h-[42px] flex items-center justify-center duration-300 hover:translate-y-[-5px] hover:scale-[.9]">
                                 <Facebook />
                             </a>
                             <a
                                 href="https://in.linkedin.com/"
-                                className="rounded-full bg-white w-[42px] h-[42px] flex items-center justify-center"
+                                className="rounded-full bg-white w-[42px] h-[42px] flex items-center justify-center duration-300 hover:translate-y-[-5px] hover:scale-[.9]"
                             >
                                 <Inicon />
                             </a>
                             <a
                                 href="https://twitter.com/"
-                                className="rounded-full bg-white w-[42px] h-[42px] flex items-center justify-center"
+                                className="rounded-full bg-white w-[42px] h-[42px] flex items-center justify-center duration-300 hover:translate-y-[-5px] hover:scale-[.9]"
                             >
                                 <Twitter />
                             </a>
@@ -76,7 +76,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <hr className=' w-full rounded-[10px] h-[3px] stroke-[#43ff64d9] my-[40px]' />
+                <hr className=' w-full rounded-[1px] h-[3.5px] stroke-[#43ff64d9] my-[40px] opacity-50' />
                <div className=' flex justify-center pb-[30px]'> <p className='text-[10px] xs:text-[14px] font-normal font-ff-mont text-[#FFF] leading-[-0.28px] flex items-center gap-[1.5px]'><span>Copyright</span>  <Cfooter />
                 <span>FT PLANE 2022 All right reserved</span></p></div>
             </div>

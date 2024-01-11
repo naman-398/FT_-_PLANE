@@ -84,17 +84,17 @@ const Oursection = () => {
                 </div>
                 <p className=' text-center text-[#030522] text-[20px] xs:text-[24px] font-extrabold leading[150%] pt-[16px] font-ff-mont'> {mycard.para1} </p>
                 <p className=' font-ff-mont text-[##5B5D6F] text-[16px] leading-[normal] xs:leading-[150%] font-normal text-center pt:[5px] xs:pt-[10px] '>Suspendisse ultrices nibh non cursus sagittis. Morbi dictum consequat ex, quis finibus magna.</p>
-                <div className=' bg-[#030522] w-[50px] h-[50px] rounded-full mx-auto mt-[15px] xs:mt-[32px] flex justify-center items-center'>
+                <div className=' bg-[#030522] w-[50px] h-[50px] rounded-full mx-auto mt-[15px] xs:mt-[32px] flex justify-center items-center cursor-pointer btn2'>
                     <Rightaero />
                 </div>
             </div>
         </div>
     ))
     return (
-        <div className='bg-[#FEFEFE] relative z-0' id='all'>
+        <div className='bg-[#FEFEFE] relative z-1   ' id='all'>
             {showModal1 && (
-                <div className=' absolute w-full h-full top-[-20%] xs:top-[-50%] start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
-                    <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
+                <div className=' fixed w-full h-full top-[0%] start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
+                    <span className=' z-[20] max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
                         <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
                         </div>
                         <p className=' text-center font-ff-mont font-black text-[20px] xs:text-[30px] text-[#000] '> Congratulation</p>
@@ -102,7 +102,7 @@ const Oursection = () => {
                         <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
                     </span></div>)}
             {showModal2 && (
-                <div className=' absolute w-full h-full top-[-20%] xs:top-[-50%]  start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
+                <div className=' fixed w-full h-full top-[0%]  start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
                     <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
                         <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
                         </div>
@@ -111,7 +111,7 @@ const Oursection = () => {
                         <button className=' p-[6px_12px] xs:p-[10px_15px] bg-[#313EF7] text-[#FFF] text-[14px] xs:text-[18px] font-ff-mont font-normal rounded-[56px] mt-1 xs:mt-[15px] border-[2px] border-transparent hover:border-[#313EF7] hover:text-[#313EF7] duration-300 hover:bg-transparent' onClick={closeModal}> Done</button>
                     </span></div>)}
             {showModal3 && (
-                <div className=' absolute w-full h-full top-[-20%] xs:top-[-50%]  start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
+                <div className=' fixed w-full h-full top-[0%]  start-0 flex justify-center xs:items-center z-[5] backdrop-blur-md'>
                     <span className=' max-w-[300px] xs:max-w-[500px] max-h-[220px] xs:max-h-[350px] w-full h-full rounded-3xl bg-[#FFF] shadow-shadow p-[20px] flex flex-col justify-center items-center relative mt-[300px] xs:mt-0'>
                         <div className=' absolute right-[15px] top-[15px] cursor-pointer' onClick={closeModal}> <Wrongicon />
                         </div>
@@ -122,9 +122,9 @@ const Oursection = () => {
             <div className='max-w-[1200px] px-3 mx-auto relative z-[0]'>
                 <div className=' pt-4 900:pt-0 900:translate-y-[-54%]'>
                     <div className=' flex overflow-x-scroll '>
-                        <button onClick={() => tabs('tab1')} className={`${first === "tab1" ? "tab" : ""} font-ff-mont text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[23px] sm:px-[42px] rounded-tl-[20px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>Economy</button>
-                        <button onClick={() => tabs('tab2')} className={`${first === "tab2" ? "tab" : ""} font-ff-mont text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[20px] sm:px-[39px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>Busniness </button>
-                        <button onClick={() => tabs('tab3')} className={`${first === "tab3" ? "tab" : ""} font-ff-mont text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[47px] sm:px-[66px] rounded-tr-[20px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>First</button>
+                        <button onClick={() => tabs('tab1')} className={`${first === "tab1" ? "tab" : ""} font-ff-mont text-[14px] xxs:text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] border-r-2 px-[15px] xxs:px-[23px] sm:px-[42px] rounded-tl-[20px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>Economy</button>
+                        <button onClick={() => tabs('tab2')} className={`${first === "tab2" ? "tab" : ""} font-ff-mont text-[14px] xxs:text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] border-r-2 px-[12px] xxs:px-[20px] sm:px-[39px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>Busniness </button>
+                        <button onClick={() => tabs('tab3')} className={`${first === "tab3" ? "tab" : ""} font-ff-mont text-[14px] xxs:text-[16px] xs:text-[18px] font-medium leading-[normal] sm:leading-[28px] text-[#030522] py-[16px] px-[32px] xxs:px-[47px] sm:px-[66px] rounded-tr-[20px] border-b-[1px] border-b-[#F3F4F6] bg-[#FFF]`}>First</button>
                     </div>
                     <div className='p-[15px] xs:p-[25px] lgg:p-[40px] bg-[#FFFFFF] xs:rounded-tr-[20px] rounded-br-[20px] rounded-bl-[20px]  shadow-shadow '>
                         {first === "tab1" && <div>
@@ -218,7 +218,7 @@ const Oursection = () => {
                                 </div>
                             </div>
                             <div className=' text-center mt-[8px] xs:mt-[25px]'>
-                                <button onClick={openModal1} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
+                                <button onClick={openModal1} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button btn'>Book Now </button>
                             </div>
                         </div>}
                         {first === "tab2" && <div>
@@ -312,7 +312,7 @@ const Oursection = () => {
                                 </div>
                             </div>
                             <div className=' text-center mt-[8px] xs:mt-[25px]'>
-                                <button onClick={openModal2} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
+                                <button onClick={openModal2} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button btn'>Book Now </button>
                             </div>
                         </div>}
                         {first === "tab3" && <div>
@@ -406,7 +406,7 @@ const Oursection = () => {
                                 </div>
                             </div>
                             <div className=' text-center mt-[8px] xs:mt-[25px]'>
-                                <button onClick={openModal3} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button'>Book Now </button>
+                                <button onClick={openModal3} className=' font-ff-mont text-[16px] font-semibold duration-300 border-[2px] border-[transparent] hover:border-[#313EF7] hover:bg-transparent hover:text-[#313EF7] leading-[28px] text-[#FFF] py-[10px] xs:py-[14px] px-[25px] xs:px-[45px] bg-[#313EF7] rounded-[56px] shadow-button btn'>Book Now </button>
                             </div>
                         </div>}
                     </div>
