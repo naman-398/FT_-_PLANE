@@ -23,7 +23,7 @@ const Booksection = () => {
                         <p className=' font-ff-mont text-[14px] xs:text-base text-[#ffffffa6] leading-[normal] xs:leading-[150%] font-normal pt-[10px] xs:pt-[16px] text-center md:text-start' data-aos="fade-right">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
                         <img src={earth} alt="earth" className=' max-w-[315px] max-h-[315px] md:pt-6 mx-auto md:mx-0' data-aos="fade-right"/>
                     </div>
-                    <div className=' w-full relative md:w-1/2 px-3 flex flex-col lgg:flex-row lgg:justify-between gap-4  md:gap-[80px] lgg:gap-[unset] '>
+                    <div className=' w-full relative z-[5] cursor-pointer md:w-1/2 px-3 flex flex-col lgg:flex-row lgg:justify-between gap-4  md:gap-[80px] lgg:gap-[unset] '>
                         <div className=' bg-[#FFFFFF] px-[12px] xs:px-[17px] py-[20px] xs:py-[30px] rounded-[30px] max-w-[390px] border-[unset]  overflow-hidden relative xxs:mx-auto md:mx-0 -mt-4' data-aos="fade-left">
                             <div className=' flex flex-wrap flex-row -mx-3 px-[13px]'>
                                 <div className=' w-1/2 px-3'>
@@ -60,9 +60,9 @@ const Booksection = () => {
                           <button className=' rounded-full duration-300 hover:bg-[#FFFFFF1A] bg-[#313EF7] p-[12px_16px] xs:mt-[51px] ml-[20px]'><Arrowleft/></button>
                           <button className='rounded-full hover:bg-[#FFFFFF1A] duration-300 bg-[#313EF7] p-[12px_16px] xs:mt-[11px] ml-[20px]'><Arrowright/></button>
                         </div>
-                        <div className=' absolute z-0 top-[60px] left-[70px] hidden lg:block' data-aos="fade-left"> <Card1/></div>
-                        <div className=' absolute z-1 top-[40px] left-[50px] hidden lg:block' data-aos="fade-left"> <Card2/></div>
-                        <div className=' absolute z-1 top-[20px] left-[30px] hidden lg:block' data-aos="fade-left"> <Card3/></div>
+                        <div className=' absolute z-[-3] top-[60px] left-[70px] hidden lg:block' data-aos="fade-left"> <Card1/></div>
+                        <div className=' absolute z-[-2] top-[40px] left-[50px] hidden lg:block' data-aos="fade-left"> <Card2/></div>
+                        <div className=' absolute z-[-1] top-[20px] left-[30px] hidden lg:block' data-aos="fade-left"> <Card3/></div>
                     </div>
                 </div>
             </div>

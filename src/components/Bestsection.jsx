@@ -51,7 +51,7 @@ const Bestsection = () => {
     }, [])
     const mycard1 = mycardinfo1.map((mycard1) => (
         <div className='w-1/2 md:w-1/3 lg:w-1/4 px-3' id='what'>
-        <div className=' max-w-[282px] pb-[40px] max-h-[420px] rounded-[213px] bg-[#FFF] shadow-shadow w-full mt-[15px] xs:mt-[25px] md:mt-[40px] mx-auto md:mx-0' data-aos={mycard1.AOS1}>
+        <div className=' max-w-[282px] pb-[40px] max-h-[420px] rounded-[213px] bg-[#FFF] shadow-shadow w-full mt-[15px] xs:mt-[25px] md:mt-[40px] mx-auto md:mx-0 cursor-pointer' data-aos={mycard1.AOS1}>
             <img src={mycard1.img} alt="" className=' w-full' />
             <div className=' -mt-[15px] 400:-mt-[20px]'><img src={mycard1.img2} alt="best1" className='mx-auto max-w-[40px] 400:max-w-[50px] xs:max-w-[80px] max-h-[50px] xs:max-h-[80px] h-full w-full' /></div>
             <p className=' text-[#011736] text-center font-ff-mont text-[16px] 400:text-[18px] sm:text-[24px] font-semibold leading-[normal] xxs:leading-[150%] mt-1 xxs:mt-2'>{mycard1.text1}</p>
